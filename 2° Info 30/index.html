@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de componentes - php com mysql</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container"
+    <h3 class="text-center">CADASTRO DE COMPONENTES</h3>
+    <form name="cadastro" method="post" action="InserirComponente.php">
+        <table align="center" width ="600">
+            <tr>
+                <td><label>curso:</label></td>
+                <td><input type="text" name="curso" size="40" 
+                maxlength="60" placeholder="Informe o nome do curso" required></td>
+                <select id="opcoes" name="curso"></select>
+                <option value="opcao1">Informatica</option>
+                <option value="opcao2">RH</option>
+                <option value="opcao3">Juridico</option>
+                <option value="opcao4">marketing</option>
+                <option value="opcao5">Linguagens</option>
+                <option value="opcao6">Administracao</option>
+            </tr>
+            <tr>
+                <td><label>componente</label></td>
+                <td><input type="text" name="componente" size="50" maxlength="50" required> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="inserir" value="Inserir" class="btn btn-danger">
+                </td>
+            </tr>
+        </table>
+    </form>
+  </div>
+</body>
